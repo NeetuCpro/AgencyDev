@@ -2,12 +2,14 @@
   "name": "agency",
   "version": "1.0.0",
   "main": "server.js",
- "scripts": {
-  "start": "node server.js",
-  "server": "nodemon server.js",
-  "client": "cd client && npm start",
-  "dev": "concurrently \"npm run server\" \"npm run client\""
-},
+"scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "backend:dev": "NODE_ENV=development nodemon server.js",
+    "backend:prod": "NODE_ENV=production node server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
