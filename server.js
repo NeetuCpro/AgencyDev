@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 // Detect Environment
 const isProduction = process.env.NODE_ENV === "production";
 const CLIENT_URL = isProduction
-  ? "https://analytics.progilityconsulting.in"
+  ? "https://analytics.conversionprollp.com"
   : "http://localhost:3000";
 
 const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://Neetu:Neetu%40%23pra12@cluster0.v0gvp.mongodb.net/CproReport";
